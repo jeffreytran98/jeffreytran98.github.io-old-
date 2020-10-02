@@ -110,6 +110,8 @@ body {
 
 .box-adjectives {
     height: 550px;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -125,8 +127,12 @@ body {
 }
 
 
-.blink {
-    animation: blink 0.5s infinite;
+#blinker {
+    animation: blink 1.2s infinite;
+    font-size: 92px;
+    letter-spacing: -20px;
+    margin-top: 0.5%;
+    float:right;
 }
 
 @keyframes blink{

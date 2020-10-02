@@ -44,10 +44,9 @@ function deletingEffect() {
 		// how fast each individual letter gets deleted (100 = .1 seconds per letter)
 		timer = setTimeout(loopDeleting, 100);
 	};
-	// When finished typing, delay .75 seconds
-	setTimeout(loopDeleting, 750);
+	// When finished typing, delay 1.25 seconds
+	setTimeout(loopDeleting,1250);
 };
-
 
 function wordChange(word, new_word) {
 	document.getElementById(word).innerHTML = new_word
@@ -57,14 +56,29 @@ function wordChange(word, new_word) {
 function transition(timing, timing_2) {
 	//timing is the number needed to fadeout completley and then change word instantly
 	//timing_2 is the number needed to fadein completely and then begin the LoopDelete and LoopType
+
+	//Makes 'hey thats me' invisible
+	//document.getElementById('me').style.opacity = '0';
+	$('#me').fadeOut(0, function(){})
+
+	//Have blinker completely invisible at the start
+	$('#blinker').fadeOut(timing, function(){})
+
 	//3 seconds to fadeout fully and changes the word "invisibly"
 	$('#word').fadeOut(timing, function(){})
 	setTimeout(wordChange, timing, 'word','')
 
+
 	//only when it's been full faded out can you start fading in the first word
+	$('#blinker').fadeIn(timing_2, function(){})
+
+
+	$('#me').delay((timing)).fadeIn((timing - 1000), function(){})
 	$('#word').fadeIn(timing_2, function(){})
 	setTimeout(typingEffect, timing_2)
 }
 
 transition(3000, 4000)
+
+
 
