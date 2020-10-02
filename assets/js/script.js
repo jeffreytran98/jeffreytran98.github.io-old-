@@ -4,8 +4,6 @@ const words = ["Developer.", "Data Analyst.", "Musician.", "Gamer."];
 let i = 0;
 let timer;
 
-//Welcome Message turns dark and explodes into white pieces become my "stars"
-
 function typingEffect() {
     //split up the word to get each letter. word is a list of individual letters here
     let word = words[i].split("");
@@ -28,7 +26,6 @@ function typingEffect() {
 function deletingEffect() {
     //split up the word to get each letter. word is a list of individual letters here
     let word = words[i].split("");
-    console.log(word)
     //while True
 	var loopDeleting = function() {
 		if (word.length > 0) {
@@ -51,5 +48,23 @@ function deletingEffect() {
 	setTimeout(loopDeleting, 750);
 };
 
-//Delay the entire loop function call by 2000 seconds
-setTimeout(typingEffect, 2000);
+
+function wordChange(word, new_word) {
+	document.getElementById(word).innerHTML = new_word
+}
+
+
+function transition(timing, timing_2) {
+	//timing is the number needed to fadeout completley and then change word instantly
+	//timing_2 is the number needed to fadein completely and then begin the LoopDelete and LoopType
+	//3 seconds to fadeout fully and changes the word "invisibly"
+	$('#word').fadeOut(timing, function(){})
+	setTimeout(wordChange, timing, 'word','')
+
+	//only when it's been full faded out can you start fading in the first word
+	$('#word').fadeIn(timing_2, function(){})
+	setTimeout(typingEffect, timing_2)
+}
+
+transition(3000, 4000)
+
