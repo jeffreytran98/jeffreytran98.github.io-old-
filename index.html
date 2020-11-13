@@ -3,47 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeffrey Tran Portfolio</title>
-    <link rel = 'stylesheet' type = 'text/css' href = 'assets/style.css'>
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <title>Jeffrey Tran Final Project</title>
+    <link rel = 'stylesheet' type = 'text/css' href = 'assets/css/style.css'> 
+    <!-- Links fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+
 </head>
 
 
 <body>
-    
-        <div class = "navbar"> 
-            <div class = 'prof-container'>
-                <img class = 'prof-pic' src = 'assets/img/jtface.jpg'> 
-            </div>
-            <ul class = 'site-section'> 
-                <li class = 'navitem section-welcome'> <a href = 'index.html'> Welcome  </a></li>
-                <li class = 'navitem section-about'> <a href = 'about.html'> About </a></li>
-                <li class = 'navitem section-projects'> <a href = 'projects.html'> Projects </a></li>
-                <li class = 'navitem section-resume'> <a href = 'resume.html'> Resume </a></li>
-                <li class = 'navitem section-contact'> <a href = 'contact.html'> Contact </a></li>
-            </ul>
+    <!-- Navbar Stuff ONLY -->
+    <nav class = "navbar"> 
+        <div class = 'prof-container'>
+            <img class = 'prof-pic' src = 'assets/img/jtface.jpg'>
         </div>
+        <ul class = 'site-section'>
+            <li class = 'navitem section-welcome'> <a href = 'index.html'> Welcome  </a></li>
+            <li class = 'navitem section-about'> <a href = 'about.html'> About </a></li>
+            <li class = 'navitem section-projects'> <a href = 'projects.html'> Projects </a></li>
+            <li class = 'navitem section-resume'> <a href = 'resume.html'> Resume </a></li>
+            <li class = 'navitem section-contact'> <a href = 'contact.html'> Contact </a></li>
+        </ul>
+    </nav>
 
-        <div class = "content">
+    <!-- Content Stuff ONLY -->
+    <div class = "content">
+
+        <div class = "content-background">
             <div class = "box-welcome">
                 <h1 id = 'me' class = "text-welcome"> Hey, That's Me </h1>
+                <!-- Stars and moon go here -->
             </div>
+
 
             <div class = "box-adjectives">
-                <p id = "word" class = "text-adjectives"> Welcome</p>
-                <p id = 'blinker'> &nbsp| </p>
-                <!-- If you want, you can add the | blinker by making a new id
-                <p id = 'blinker'> | </p>
-                In the CSS, opacity: 0 it until the words come up!
-                -->
 
+                <div class = 'word-container'>
+                    <p id = "word" class = "text-adjectives"> Welcome </p>
+                    <p id = 'blinker'> &nbsp| </p>
+                </div>
+
+
+                <div class = "building-container">
+                    <!-- some numbers before others to do "in front of" without doing z-index hehe -->
+                    <div class = "building seven"> </div>
+                    <div class = "building one"> </div>
+                    <div class = "building two"> </div>
+                    <div class = "building three"> </div>
+                    <div class = "building five"> </div>
+                    <div class = "building four"> </div>
+                    <div class = "building six"> </div>
+                    <div class = "building eight"> </div>
+
+                </div>
             </div>
+
         </div>
+
+
+
+
+
+
+
+
+
+    </div>
+</div>
+
+
+
 
 </body>
 
-
+<!-- connect jquery functionality -->
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 <!-- Connect javascript at the end-->
 <script type = "text/javascript" src= "assets/js/script.js"></script>
+
 </html>

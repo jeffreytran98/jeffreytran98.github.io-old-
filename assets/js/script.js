@@ -1,4 +1,8 @@
 //https://codepen.io/vdhug/pen/bGbXEKg
+
+//ATTENTION PLS NOTE THE FUNCTION TYPGINGEFFECT AND DELETINGEFFECT ARE NOT MY CODE!!!
+//I linked the above codepen where the logic was made by that developer and added some timing effects!
+
 const words = ["Developer.", "Data Analyst.", "Musician.", "Gamer."];
 
 let i = 0;

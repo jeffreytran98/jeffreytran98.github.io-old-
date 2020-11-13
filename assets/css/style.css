@@ -1,0 +1,198 @@
+/* Sets HTML/BODY to be some size so Content percentages makes sense*/
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.prof-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px
+}
+
+.prof-pic {
+    width: 50%;
+    border-radius: 50%;
+}
+
+.navbar {
+    display: block;
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 20%; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #3E515A;
+}
+
+.site-section {
+    padding: 0px;
+    text-align: center;
+    color: #759F9F;
+    font-family: "Roboto Slab";
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.navitem {
+    display: flex;
+    list-style: none;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: #C4C4C4;
+    height: 65px;
+
+    justify-content: center;
+    align-items: center;
+}
+/* Makes clickable things less obvious until hovered */
+.navitem a {
+    color: #759F9F;
+    text-decoration: none;
+}
+.navitem:hover {
+    text-decoration: underline;
+    background-color: darkgrey;
+}
+
+/* /////////////////////////////// */
+/*    CONTENT CSS STARTS HERE      */
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 20%;
+}
+
+.box-welcome {
+    height: 33%;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.text-welcome {
+    margin:0;
+    padding-top: 5%;
+    font-family: 'Playfair Display';
+    font-size: 38px;
+    font-weight: lighter;
+    letter-spacing: 0px;
+
+}
+
+.box-adjectives {
+    height: 67%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.word-container {
+    display: flex;
+    justify-content: center;
+    height: 20%;
+}
+
+.text-adjectives {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin:0;
+    padding:0;
+    font-family: 'Playfair Display';
+    font-size: 72px;
+    letter-spacing: 4px;
+    font-weight: bolder;
+    text-decoration: underline;
+
+    height:10%
+    
+}
+
+#blinker {
+    animation: blink 1.2s infinite;
+    font-size: 92px;
+    letter-spacing: -20px;
+    margin-top: 0.5%;
+    float:right;
+
+    height: 10%;
+}
+
+@keyframes blink{
+    to {
+        opacity: .0;
+        }
+}
+
+
+/* BUILDING THE BACKGROUND STARTS HERE */
+
+.content-background {
+    height: 100%;
+    background-color: #2C2929;
+}
+
+
+.building-container {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 80%;
+}
+
+.building {
+    position: absolute;
+}
+.building.one {
+    height: 69%;
+    width: 140px;
+    background-color: #000000;
+    margin-left: 1.5%;
+}
+.building.two {
+    height: 23%;
+    width: 145px;
+    background-color: #484848;
+    margin-left: 8%;
+}
+.building.three {
+    height: 46%;
+    width: 138px;
+    background-color: #000000;
+    margin-left: 33%;
+}
+.building.four {
+    height: 31%;
+    width: 95px;
+    background-color: #484848;
+    margin-left: 53%;
+}
+.building.five {
+    height: 53%;
+    width: 150px;
+    background-color: #121212;
+    margin-left: 58%;
+}
+.building.six {
+    height: 26%;
+    width: 138px;
+    background-color: #000000;
+    margin-left: 74%;
+}
+.building.seven {
+    height: 58%;
+    width: 110px;
+    background-color: #121212;
+    margin-left: 12%;
+}
+.building.eight {
+    height: 38%;
+    width: 110px;
+    background-color: #686868;
+    margin-left: 28%;
+}
