@@ -17,6 +17,7 @@ html, body {
     border-radius: 50%;
 }
 
+
 .navbar {
     display: block;
     height: 100%; /* Full-height: remove this if you want "auto" height */
@@ -75,11 +76,36 @@ html, body {
     color: white;
 }
 
+.box-welcome-about {
+    display: flex;
+    height: fit-content;
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    color:white;
+
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    padding-bottom: 15px; 
+
+    border-bottom: solid whitesmoke;
+    border-width: thin;
+
+}
+
 .text-welcome {
     margin:0;
     padding-top: 5%;
     font-family: 'Playfair Display';
     font-size: 38px;
+    font-weight: lighter;
+    letter-spacing: 0px;
+}
+.text-welcome-about {
+    margin:0;
+    padding-top: 5%;
+    font-family: 'Playfair Display';
+    font-size: 48px;
     font-weight: lighter;
     letter-spacing: 0px;
 }
@@ -144,11 +170,15 @@ html, body {
 }
 
 
-/* BUILDING THE BACKGROUND STARTS HERE */
+/* BUILDING THE INDEX BACKGROUND STARTS HERE */
 
 .content-background {
     height: 100%;
     background-color: #2C2929;
+}
+.content-background-about {
+
+    background-color: #08252B;
 }
 
 
@@ -315,3 +345,102 @@ html, body {
 
 }
 
+
+
+/* BUILDING ABOUT-CONTENT   */ 
+.about-content {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+.about-content-row-one {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 50px;
+}
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+
+    width: 50%;
+}
+
+.about-intro-container {
+    display: flex;
+
+    width: 50%;
+}
+
+.about-intro {
+    color: whitesmoke;
+    font-family: 'Playfair Display';
+    width: 60%;
+    font-size: 21px;
+
+    margin-top:0;
+}
+
+
+
+
+.about-content-row-two {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 50px;
+}
+
+.about-content-full-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.about-content-container {
+    display: flex;
+    width: 100%;
+
+}
+
+.about-more {
+    font-size: 18px;
+    color: white;
+
+
+}
+
+.about-content-lesshalf-column {
+    width: 31%;
+}
+
+.photo-container-horizontal {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.about-first-pic {
+    width: 60%;
+}
+
+.about-second-pic {
+    width: 50%;
+}
+
+.about-third-pic {
+    width: 50%;
+}
+
+.full-horizontal-photo-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
