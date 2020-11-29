@@ -84,5 +84,3 @@ function transition(timing, timing_2) {
 
 transition(3000, 4000)
 
-
-
