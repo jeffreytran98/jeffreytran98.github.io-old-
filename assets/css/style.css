@@ -93,6 +93,22 @@ html, body {
 
 }
 
+.box-welcome-project {
+    display: flex;
+    height: fit-content;
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    color:white;
+
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    padding-bottom: 15px; 
+
+    border-bottom: solid whitesmoke;
+    border-width: thin;
+}
+
 .text-welcome {
     margin:0;
     padding-top: 5%;
@@ -102,6 +118,15 @@ html, body {
     letter-spacing: 0px;
 }
 .text-welcome-about {
+    margin:0;
+    padding-top: 5%;
+    font-family: 'Playfair Display';
+    font-size: 48px;
+    font-weight: lighter;
+    letter-spacing: 0px;
+}
+
+.text-welcome-project {
     margin:0;
     padding-top: 5%;
     font-family: 'Playfair Display';
@@ -180,6 +205,11 @@ html, body {
 
     background-color: #08252B;
 }
+
+.content-background-projects {
+    background-color: #888888;
+}
+
 
 
 .building-container {
@@ -465,3 +495,62 @@ html, body {
     flex-direction: row;
     width: 100%;
 }
+
+
+.project-row-one {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 50px;
+}
+
+
+.project-box-one {
+    width: 50%;
+    height: 200px;
+
+    background-color: black;
+}
+
+.project-one-description {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 200px;
+
+    background-color: wheat;
+}
+
+.project-row-two {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 50px;
+}
+
+
+.project-box-two {
+    width: 50%;
+    height: 200px;
+
+    background-color: black;
+}
+
+.project-two-description {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 200px;
+
+    background-color: wheat;
+}
+
+.description-title-box {
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+
