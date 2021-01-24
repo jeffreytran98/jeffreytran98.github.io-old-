@@ -500,23 +500,26 @@ html, body {
 .project-row-one {
     display: flex;
     flex-direction: row;
-
+    height: 300px;
     margin-top: 50px;
 }
 
 
 .project-box-one {
     width: 50%;
-    height: 200px;
 
     background-color: black;
+}
+.peImage {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .project-one-description {
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: 200px;
+    height: 100%;
 
     background-color: wheat;
 }
@@ -550,6 +553,7 @@ html, body {
     justify-content: center;
     
 }
+
 
 
 
