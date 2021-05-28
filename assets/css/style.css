@@ -59,6 +59,10 @@ html, body {
     background-color: darkgrey;
 }
 
+.section-note {
+    font-size: medium;
+}
+
 /* /////////////////////////////// */
 /*    CONTENT CSS STARTS HERE      */
 .content {

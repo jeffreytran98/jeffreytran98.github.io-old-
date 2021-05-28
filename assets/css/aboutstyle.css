@@ -164,24 +164,14 @@ html, body {
     width: 70%;
 }
 
-.row-one-text-actual {
+
+.about-text {
     color: whitesmoke;
     font-family: "Playfair Display";
     width: 100%;
     height: fit-content;
     font-size: 2.25vh;
-
 }
-
-.row-one-text-actual-two {
-    color: whitesmoke;
-    font-family: "Playfair Display";
-    width: 100%;
-    height: fit-content;
-    font-size: 2.25vh;
-
-}
-
 
 
 /* ROW TWO */ 
