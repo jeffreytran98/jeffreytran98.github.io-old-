@@ -392,7 +392,7 @@ html, body {
     width: 50%;
 } */
 
-.about-intro-container {
+/* .about-intro-container {
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -406,7 +406,7 @@ html, body {
     font-size: 16px;
 
     margin-top:0;
-}
+} */
 
 
 
@@ -451,9 +451,9 @@ html, body {
     width: 100%;
 }
 
-.about-first-pic {
+/* .about-first-pic {
     width: 60%;
-}
+} */
 
 .about-second-pic {
     width: 75%;
