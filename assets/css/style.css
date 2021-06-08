@@ -82,7 +82,7 @@ html, body {
 
 
 
-.box-welcome-project {
+/* .box-welcome-project {
     display: flex;
     height: fit-content;
     width: 90%;
@@ -96,7 +96,7 @@ html, body {
 
     border-bottom: solid whitesmoke;
     border-width: thin;
-}
+} */
 
 .text-welcome {
     margin:0;
@@ -108,14 +108,14 @@ html, body {
 }
 
 
-.text-welcome-project {
+/* .text-welcome-project {
     margin:0;
     padding-top: 5%;
     font-family: 'Playfair Display';
     font-size: 48px;
     font-weight: lighter;
     letter-spacing: 0px;
-}
+} */
 
 .box-adjectives {
     height: 67%;
@@ -184,9 +184,9 @@ html, body {
     background-color: #2C2929;
 }
 
-.content-background-projects {
+/* .content-background-projects {
     background-color: #888888;
-}
+} */
 
 
 
@@ -489,8 +489,6 @@ html, body {
 .project-box-one {
     width: 50%;
     margin-left: 2.5%;
-
-
 }
 .peImage {
     max-width: 100%;
@@ -534,8 +532,7 @@ html, body {
 
 .description-title-box {
     display: flex;
-    justify-content: center;
-    
+    justify-content: center; 
 }
 
 .about-project {
