@@ -10,10 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
 
+    <!-- Links EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 </head>
-
-
-
 
 
 <body>
@@ -33,7 +32,11 @@
 
         <div class = "content">
             <div id = "like_button_container"> </div>
+
             <form id="contact-form">
+                <!-- Honestly not sure what this does... -->
+                <input type = "hidden" name = "contact_number">
+
                 <label> Name </label>
                 <input type="text" name="user_name">
 
@@ -42,7 +45,7 @@
 
                 <label>Message</label>
                 <textarea name="message">  </textarea>
-                
+
                 <input type="submit" value="Send">
             </form>
         </div>
@@ -55,6 +58,7 @@
       
         <!-- Load our React component. -->
         <script src="assets/js/contactscript.js"> </script>
+        
         <!-- Load EmailJS component. -->
         <script src = "assets/js/emailkey.js"> </script>
 </body>

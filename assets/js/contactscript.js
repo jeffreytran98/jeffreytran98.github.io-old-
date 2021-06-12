@@ -39,4 +39,4 @@ window.onload = function() {
 
 emailjs.init('user_l2Q0UI7G2nmk3uNjOzE1h');
 const domContainer = document.querySelector('#like_button_container');
-// ReactDOM.render(e(LikeButton), domContainer);
+ReactDOM.render(e(LikeButton), domContainer);
