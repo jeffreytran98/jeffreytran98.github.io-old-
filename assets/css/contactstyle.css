@@ -1,0 +1,81 @@
+/* Sets HTML/BODY to be some size so Content percentages makes sense*/
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.prof-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px
+}
+
+.prof-pic {
+    width: 50%;
+    border-radius: 50%;
+}
+
+
+.navbar {
+    display: block;
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 20%; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #3E515A;
+}
+
+.site-section {
+    padding: 0px;
+    text-align: center;
+    color: #759F9F;
+    font-family: "Roboto Slab";
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.navitem {
+    display: flex;
+    list-style: none;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: #C4C4C4;
+    height: 65px;
+
+    justify-content: center;
+    align-items: center;
+}
+/* Makes clickable things less obvious until hovered */
+.navitem a {
+    color: #759F9F;
+    text-decoration: none;
+}
+.navitem:hover {
+    text-decoration: underline;
+    background-color: darkgrey;
+}
+
+.section-note {
+    font-size: medium;
+}
+
+
+/* /////////////////////////////// */
+/*    CONTENT CSS STARTS HERE      */
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 20%;
+}
+
+
+
+#like_button_container {
+    color: pink;
+}
+
