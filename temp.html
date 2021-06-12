@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-    <!-- <title>Contact Form</title> -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
-            // https://dashboard.emailjs.com/admin/integration
             emailjs.init('user_l2Q0UI7G2nmk3uNjOzE1h');
         })();
     </script>
@@ -18,7 +15,7 @@
                 // generate a five digit number for the contact_number variable
                 this.contact_number.value = Math.random() * 100000 | 0;
                 // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
+                emailjs.sendForm('gmail', 'contact_form', this)
                     .then(function() {
                         console.log('SUCCESS!');
                     }, function(error) {
@@ -44,7 +41,7 @@
 
     <!-- Load our React component. -->
     <script src="assets/js/contactscript.js"> </script>
-    
+
     <!-- Load EmailJS component. -->
     <script src = "assets/js/emailkey.js"> </script>
 
