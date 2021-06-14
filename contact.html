@@ -31,23 +31,41 @@
 
 
         <div class = "content">
-            <div id = "like_button_container"> </div>
+            <div class = "box-welcome">
+                <div class = "word-container">
+                    <h1 class = "text-welcome"> Contact </h1>
+                </div>
+            </div>
 
-            <form id="contact-form">
-                <!-- Honestly not sure what this does... -->
-                <input type = "hidden" name = "contact_number">
+            <div class = "inner-content">
+                <div id = "like_button_container"> </div>
 
-                <label> Name </label>
-                <input type="text" name="user_name">
+                <div class = "text-content-container">
+                    <h6 class = "text-content">
+                        Welcome to my contact page and my React playground.
+                    </h6>
+                    <h6 class ="text-content">
+                        Feel free to send me a message by filling out the boxes below - (It works!)
+                    </h6>
+                </div>
 
-                <label>Email</label>
-                <input type="email" name="user_email">
+                <form id="contact-form">
+                    <!-- Honestly not sure what this does... -->
+                    <input type = "hidden" name = "contact_number">
+    
+                    <label> Name - </label>
+                    <input type="text" name="user_name">
+    
+                    <label> Email - </label>
+                    <input type="email" name="user_email">
+    
+                    <label>Message - </label>
+                    <textarea name="message">  </textarea>
+    
+                    <input type="submit" value="Send">
+                </form>
+            </div>
 
-                <label>Message</label>
-                <textarea name="message">  </textarea>
-
-                <input type="submit" value="Send">
-            </form>
         </div>
 
     
